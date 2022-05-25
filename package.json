@@ -28,11 +28,6 @@
     "lint": "tslint -c tslint.json -p ./lint-tsconfig.json",
     "preversion": "npm run lint"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
   "lint-staged": {
     "*.ts": [
       "tslint -c tslint.json -p ./lint-tsconfig.json --fix",
@@ -40,7 +35,7 @@
     ]
   },
   "peerDependencies": {
-    "three": "^0.140.0"
+    "three": "^0.133.1"
   },
   "devDependencies": {
     "@types/webgl2": "0.0.6",
